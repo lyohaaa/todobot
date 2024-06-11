@@ -9,7 +9,7 @@ database.init_db()
 
 @dp.message_handler(commands='start')
 async def start(message: types.Message):
-    await message.reply("Привет! git initЯ To-Do бот, напиши мне задачу, которую надо будет выполнить, используя команду /add *задача* \nДля вывода списка задач напиши /list \nДля удаления - /delete")
+    await message.reply("Привет! Я To-Do бот, напиши мне задачу, которую надо будет выполнить, используя команду /add *задача* \nДля вывода списка задач напиши /list \nДля удаления - /delete")
 
 @dp.message_handler(commands='add')
 async def add(message: types.Message):
