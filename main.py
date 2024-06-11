@@ -18,7 +18,7 @@ async def add(message: types.Message):
         user_id = message.from_user.id
         username = message.from_user.username
         database.add_task(user_id, username, task)
-        await message.reply(f"Задача *{task}* добавлена")
+        await message.reply(f"Задача '{task}' добавлена")
     else:
         await message.reply("Пожалуйста, укажите задачу через /add")
 
